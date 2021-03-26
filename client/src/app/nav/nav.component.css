@@ -1,0 +1,5 @@
+.cimage {
+  max-height: 50px;
+  border: 20x solid #fff;
+  display: inline;
+}

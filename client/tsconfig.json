@@ -22,5 +22,6 @@
     "enableI18nLegacyMessageIdFormat": true,
     "strictTemplates": true,
     "fullTemplateTypeCheck": true
-  }
+  },
+  
 }

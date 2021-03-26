@@ -36,10 +36,16 @@
         *ngIf="accountService.currentUser$ | async as user"
         dropdown
       >
+        <img
+          src="{{ user.photoUrl || './assets/user.png' }}"
+          alt="{{ user.username }}"
+          class="rounded cimage"
+        />
         <a class="dropdown-toggle text-light btn" dropdownToggle
           >Welcome {{ user.username | titlecase }}</a
         >
-        <div class="dropdown-menu mt-3 btn" *dropdownMenu>
+
+        <div class="dropdown-menu mt-3 btn ml-2" *dropdownMenu>
           <a class="dropdown-item" routerLink="member/edit">Edit Profile</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item btn" (click)="logout()">Logout</a>
